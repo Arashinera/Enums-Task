@@ -7,6 +7,7 @@ public class AppView {
 
     Scanner input = new Scanner(System.in);
 
+    //Отримання даних :
     public int getData() {
         input.useLocale(Locale.ENGLISH);
         System.out.println("""
@@ -17,6 +18,7 @@ public class AppView {
         return input.nextInt();
     }
 
+    //Виведення даних :
     public void getOutput(String output) {
         input.close();
         System.out.println(output);
